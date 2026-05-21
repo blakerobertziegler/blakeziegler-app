@@ -48,7 +48,7 @@ export default function ContactPage() {
             <div className="mono-label">// MESSAGE SENT</div>
             <h2 className="contact-success-heading">Got it.</h2>
             <p className="contact-success-sub">
-              I&apos;ll get back in touch.
+              We will be in touch.
             </p>
             <Link href="/" className="not-found-btn" style={{ marginTop: 24 }}>
               ← Back home
