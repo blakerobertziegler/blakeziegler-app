@@ -257,8 +257,11 @@ body {
 
 @media (max-width: 768px) {
   .chip-section-inner {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
     gap: 48px;
+  }
+  .hero-figure {
+    display: none;
   }
   .chip-canvas-wrap {
     width: 100%;
