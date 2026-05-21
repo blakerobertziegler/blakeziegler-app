@@ -261,7 +261,7 @@ body {
     gap: 48px;
   }
   .chip-canvas-wrap {
-    width: 300px;
+    width: 100%;
     max-width: 300px;
     margin: 0 auto;
   }
@@ -693,6 +693,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  .footer-cta-row {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
   .footer-btn {
     width: 100%;
     justify-content: center;
@@ -1228,10 +1232,6 @@ body {
   .hero-radar-wrap {
     width: 240px;
     height: 240px;
-  }
-  .hero-radar-canvas {
-    width: 240px !important;
-    height: 240px !important;
   }
 }
 /* ── Site Nav ─────────────────────────────────────── */

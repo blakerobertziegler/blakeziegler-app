@@ -181,7 +181,7 @@ export default function FooterSection() {
 
       <div className="footer-inner" style={{ position: 'relative', zIndex: 1 }}>
         {/* CTA row — copy left, headshot right */}
-        <div style={{
+        <div className="footer-cta-row" style={{
           display: 'grid',
           gridTemplateColumns: '1fr auto',
           gap: '64px',

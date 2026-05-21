@@ -24,7 +24,8 @@ export default function HeroRadar() {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    const SIZE = 420;
+    const container = canvas.parentElement;
+    const SIZE = container ? Math.round(container.clientWidth) || 420 : 420;
     const dpr = window.devicePixelRatio || 1;
     canvas.width = SIZE * dpr;
     canvas.height = SIZE * dpr;
@@ -88,9 +89,28 @@ export default function HeroRadar() {
       });
     };
 
+    const handleTouch = (e: TouchEvent) => {
+      e.preventDefault();
+      const touch = e.changedTouches[0];
+      const rect = canvas.getBoundingClientRect();
+      const mx = touch.clientX - rect.left - CX;
+      const my = touch.clientY - rect.top - CY;
+      const d = Math.hypot(mx, my);
+      if (d > R - 4) return;
+      blips.push({
+        x: mx + CX,
+        y: my + CY,
+        text: getLine(),
+        textLife: 1,
+        pulse: 0,
+        born: Date.now(),
+      });
+    };
+
     canvas.addEventListener('mousemove', handleMove);
     canvas.addEventListener('mouseleave', handleLeave);
     canvas.addEventListener('click', handleClick);
+    canvas.addEventListener('touchend', handleTouch, { passive: false });
 
     let visible = true;
     function draw() {
@@ -240,6 +260,7 @@ export default function HeroRadar() {
       canvas.removeEventListener('mousemove', handleMove);
       canvas.removeEventListener('mouseleave', handleLeave);
       canvas.removeEventListener('click', handleClick);
+      canvas.removeEventListener('touchend', handleTouch);
     };
   }, []);
 
