@@ -9,12 +9,16 @@ export const forkBrain: Project = {
     'A restaurant recommendation app that picks your next spot based on your mood and a few simple questions. No more "I don\'t know, you pick."',
   index: 3,
   thumbnail: {
-    static: '/projects/forkbrain/cover.jpg',
+    static: '/projects/forkbrain/cover.png',
     motion: '/projects/forkbrain/preview.mp4',
   },
   meta: {
     role: 'Weekend build',
     stack: ['React', 'TypeScript', 'Supabase'],
     timeline: '2026 — ongoing',
+  },
+  content: {
+    hero: { type: 'image', src: '/projects/forkbrain/cover.png' },
+    sections: [],
   },
 };

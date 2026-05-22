@@ -10,12 +10,16 @@ export const keystone: Project = {
     'A quantitative equities ranking and trading system built on the loosened PDT rules. Long-only trading on a weekly and disciplined model.',
   index: 1,
   thumbnail: {
-    static: '/projects/keystone/cover.jpg',
+    static: '/projects/keystone/cover.png',
     motion: '/projects/keystone/preview.mp4',
   },
   meta: {
     role: 'Solo build',
     stack: ['Python', 'Polygon API', 'PostgreSQL'],
     timeline: '2025 — ongoing',
+  },
+  content: {
+    hero: { type: 'image', src: '/projects/keystone/cover.png' },
+    sections: [],
   },
 };

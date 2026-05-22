@@ -18,4 +18,8 @@ export const otto: Project = {
     stack: ['TypeScript', 'Next.js', 'Redis'],
     timeline: '2026 — ongoing',
   },
+  content: {
+    hero: { type: 'image', src: '/projects/otto/cover.jpg' },
+    sections: [],
+  },
 };
