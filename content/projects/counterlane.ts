@@ -1,8 +1,8 @@
 import { Project } from '@/types/project';
 
-export const otto: Project = {
-  slug: 'otto',
-  name: 'Project Otto',
+export const counterlane: Project = {
+  slug: 'counterlane',
+  name: 'Project CounterLane',
   status: 'in-dev',
   locked: true,
   passwordHashEnvVar: 'OTTO_PASSWORD_HASH',
@@ -10,8 +10,8 @@ export const otto: Project = {
     'Automotive brokerage, restructured. Aggregates third-party vehicle data to take the headache out of buying a car.',
   index: 2,
   thumbnail: {
-    static: '/projects/otto/cover.jpg',
-    motion: '/projects/otto/preview.mp4',
+    static: '/projects/counterlane/cover.png',
+    motion: '/projects/counterlane/preview.mp4',
   },
   meta: {
     role: 'Solo build',
@@ -19,7 +19,7 @@ export const otto: Project = {
     timeline: '2026 — ongoing',
   },
   content: {
-    hero: { type: 'image', src: '/projects/otto/cover.jpg' },
+    hero: { type: 'image', src: '/projects/counterlane/cover.png' },
     sections: [],
   },
 };

@@ -1,11 +1,11 @@
 import { keystone } from '@/content/projects/keystone';
-import { otto } from '@/content/projects/otto';
+import { counterlane } from '@/content/projects/counterlane';
 import { forkBrain } from '@/content/projects/forkbrain';
 import { Project } from '@/types/project';
 
 export const projects: Project[] = [
   keystone,
-  otto,
+  counterlane,
   forkBrain,
 ].sort((a, b) => a.index - b.index);
 
