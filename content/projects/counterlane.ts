@@ -7,7 +7,7 @@ export const counterlane: Project = {
   locked: true,
   passwordHashEnvVar: 'OTTO_PASSWORD_HASH',
   publicDescription:
-    'Automotive brokerage, restructured. Aggregates third-party vehicle data to take the headache out of buying a car.',
+    'Automotive brokerage, restructured. Vehicle data aggregation and segment analysis that turns car-buying into a deal desk.',
   index: 2,
   thumbnail: {
     static: '/projects/counterlane/cover.png',
