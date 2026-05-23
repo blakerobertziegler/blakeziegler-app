@@ -7,7 +7,7 @@ export const counterlane: Project = {
   locked: true,
   passwordHashEnvVar: 'OTTO_PASSWORD_HASH',
   publicDescription:
-    'Automotive brokerage, restructured. Vehicle data aggregation and segment analysis that turns car-buying into a deal desk.',
+    'An algorithmic pricing-intelligence layer for the automotive market that gives buyers a confident, data-backed offer range before they even contact a dealership.',
   index: 2,
   thumbnail: {
     static: '/projects/counterlane/cover.png',
