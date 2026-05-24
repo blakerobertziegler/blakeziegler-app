@@ -7,7 +7,7 @@ export const counterlane: Project = {
   locked: true,
   passwordHashEnvVar: 'OTTO_PASSWORD_HASH',
   publicDescription:
-    'An algorithmic pricing-intelligence layer for the automotive market that gives buyers a confident, data-backed offer range before they even contact a dealership.',
+    'An algorithmic pricing layer for the automotive market that gives buyers a confident, data-backed offer range before they even contact a dealership.',
   index: 2,
   thumbnail: {
     static: '/projects/counterlane/cover.png',
