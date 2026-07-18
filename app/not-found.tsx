@@ -2,22 +2,19 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: '404 — Blake Ziegler',
+  title: 'Not found',
 };
 
 export default function NotFound() {
   return (
-    <div className="not-found-page">
-      <div className="not-found-inner">
-        <div className="mono-label">// 404 — NOT FOUND</div>
-        <div className="not-found-code" aria-hidden>404</div>
-        <h1 className="not-found-title">Nothing here.</h1>
-        <p className="not-found-sub">
-          That page doesn&apos;t exist, was removed, or never shipped.
+    <div className="page">
+      <div className="notfound">
+        <p className="label">404</p>
+        <h1 className="name">Nothing here.</h1>
+        <p className="bio">That page doesn&apos;t exist.</p>
+        <p className="row-detail" style={{ marginTop: 8 }}>
+          <Link href="/">Back home</Link>
         </p>
-        <Link href="/" className="not-found-btn">
-          ← Back home
-        </Link>
       </div>
     </div>
   );
