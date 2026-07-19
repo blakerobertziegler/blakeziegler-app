@@ -175,6 +175,7 @@ a:focus-visible {
   .page > *:nth-child(4) { animation-delay: 0.18s; }
   .page > *:nth-child(5) { animation-delay: 0.24s; }
   .page > *:nth-child(6) { animation-delay: 0.3s; }
+  .page > *:nth-child(7) { animation-delay: 0.36s; }
 
   @keyframes rise {
     from { opacity: 0; transform: translateY(12px); }

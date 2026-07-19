@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 const LINKEDIN = 'https://www.linkedin.com/in/blakerobertziegler';
 const EMAIL = 'blake@blakeziegler.app';
@@ -98,6 +99,14 @@ export default function Home() {
             <a href="https://bzsystems.io" target="_blank" rel="noopener noreferrer">
               bzsystems.io
             </a>
+          </p>
+        </section>
+
+        <section className="section" aria-label="Lab">
+          <p className="label">Lab</p>
+          <p className="row-detail">
+            Live experiments I build and ship on my own.{' '}
+            <Link href="/lab">See the lab</Link>
           </p>
         </section>
 
